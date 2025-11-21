@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../AxelLab-Logo.ico" />
+    <title>AxelBase – Base64 Encoder • Decoder</title>
+    <meta name="description" content="Fast, private, offline Base64 encoder and decoder. No tracking. No ads. Works offline." />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    
+		<link href="../../_app/immutable/assets/0.DSwpcg7p.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/5.Btc0mN_Q.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DuLTIwJF.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DX9AT85P.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BdysBj66.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BFvU-IR9.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/2bG7uF7H.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.a2Ymj9Dg.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C0cQ0bqq.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/hWZPI7nN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CfUavsiV.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.Dw1ynY_o.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DpboDwhz.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DU7oslTY.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B_ZIPEiT.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CH2FN7lB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/5.RaErD3u1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DpzxLHAf.js"><!--1apmzc4--><meta name="description" content="Learn the critical differences between standard Base64 and Base64url, character substitutions, padding rules, and real-world use cases."/> <meta property="og:title" content="Base64 vs Base64url: When to Use Which • AxelBase"/> <meta property="og:description" content="Understand when to use Base64 vs Base64url in URLs, JWTs, filenames, and APIs."/> <meta property="og:url" content="../../blog/posts/post2"/> <meta property="og:type" content="article"/> <meta name="twitter:card" content="summary_large_image"/><!----><title>Base64 vs Base64url: When to Use Which • AxelBase</title>
+  </head>
+  <body>
+    <div style="min-height: 100%;"><!--[--><!--[--><!----><header class="fixed-nav svelte-12qhfyh"><div class="container nav-container svelte-12qhfyh"><div class="nav-left svelte-12qhfyh"><a href="../../" aria-label="Home" class="brand-link svelte-12qhfyh"><img src="../../AxelLab-Logo.ico" alt="Logo" class="navbar-logo svelte-12qhfyh"/> <span class="brand-text svelte-12qhfyh">AxelBase</span></a> <div class="bmac-wrapper svelte-12qhfyh"><button class="bmac-btn svelte-12qhfyh"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="me-2"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"></path></svg> Buy me a coffee</button> <!--[!--><!--]--></div></div> <nav class="nav-links svelte-12qhfyh"><a class="nav-item svelte-12qhfyh" href="../../">Home</a> <a class="nav-item svelte-12qhfyh" href="../../#about">About</a> <a class="nav-item svelte-12qhfyh" href="../../#how-to">How to use</a> <a class="nav-item svelte-12qhfyh" href="../../#faq">FAQ</a> <a class="nav-item svelte-12qhfyh" href="../../blog">Blog</a></nav></div></header> <!--[--><!----><div class="container fade-in post-layout svelte-1apmzc4"><div class="breadcrumbs svelte-1apmzc4"><a href="../../blog" class="svelte-1apmzc4">Blog</a> <span>/</span> <p>Base64 vs Base64url</p></div> <article class="prose svelte-1apmzc4"><h1 class="svelte-1apmzc4">Base64 vs Base64url: When to Use Which</h1> <p class="post-meta svelte-1apmzc4">Published: November 21, 2025</p> <p>While both are Base64 variants, <strong>Base64url</strong> (also called "URL-safe Base64") was specifically designed to be safely embedded in URLs, filenames, and query parameters without encoding issues.</p> <h2 class="svelte-1apmzc4">The Key Differences</h2> <table class="comparison-table svelte-1apmzc4"><thead><tr class="svelte-1apmzc4"><th class="svelte-1apmzc4">Feature</th><th class="svelte-1apmzc4">Standard Base64</th><th class="svelte-1apmzc4">Base64url</th></tr></thead><tbody><tr class="svelte-1apmzc4"><td class="svelte-1apmzc4">Character 62</td><td class="svelte-1apmzc4"><code class="svelte-1apmzc4">+</code></td><td class="svelte-1apmzc4"><code class="svelte-1apmzc4">-</code></td></tr><tr class="svelte-1apmzc4"><td class="svelte-1apmzc4">Character 63</td><td class="svelte-1apmzc4"><code class="svelte-1apmzc4">/</code></td><td class="svelte-1apmzc4"><code class="svelte-1apmzc4">_</code></td></tr><tr class="svelte-1apmzc4"><td class="svelte-1apmzc4">Padding</td><td class="svelte-1apmzc4">Required (<code class="svelte-1apmzc4">=</code>)</td><td class="svelte-1apmzc4">Omitted when possible</td></tr><tr class="svelte-1apmzc4"><td class="svelte-1apmzc4">Safe in URLs?</td><td class="svelte-1apmzc4">No (needs encoding)</td><td class="svelte-1apmzc4">Yes</td></tr></tbody></table> <h2 class="svelte-1apmzc4">Real-World Use Cases</h2> <p><strong>Use Base64url when:</strong></p> <ul><li>Encoding JWT tokens (header.payload.signature)</li> <li>Passing binary data in URL parameters</li> <li>Using in filenames or DOM IDs</li> <li>Working with cookies or localStorage keys</li></ul> <p><strong>Use standard Base64 when:</strong></p> <ul><li>Following strict RFC 4648 compliance</li> <li>Interfacing with legacy systems</li> <li>Encoding email attachments (MIME)</li> <li>Using data: URIs in older browsers</li></ul> <h2 class="svelte-1apmzc4">Performance &amp; Compatibility</h2> <p>Modern browsers and libraries (including AxelBase) support both seamlessly. The conversion is trivial and has negligible performance impact.</p> <h2 class="svelte-1apmzc4">FAQ</h2> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Can I convert between them safely?</summary> <p>Yes — just replace <code>+</code> → <code>-</code>, <code>/</code> → <code>_</code>, and remove <code>=</code> padding (for Base64url).</p></details> <details class="svelte-1apmzc4"><summary class="svelte-1apmzc4">Do all decoders accept Base64url?</summary> <p>Most modern ones do. Always test if targeting very old systems.</p></details> <p class="italic-note svelte-1apmzc4">Choose the right variant for your context — it prevents bugs and saves debugging time.</p></article></div><!----><!--]--> <footer class="fixed-footer svelte-12qhfyh"><div class="container footer-content svelte-12qhfyh"><span>© AxelBase Base64 Encoder – Decoder – 2025</span> <div class="footer-links svelte-12qhfyh"><a href="../../privacy" class="svelte-12qhfyh">Privacy</a> <span class="separator svelte-12qhfyh">•</span> <a href="../../terms" class="svelte-12qhfyh">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1xrh0ag = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/base64-encode-decode"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DuLTIwJF.js"),
+						import("../../_app/immutable/entry/app.a2Ymj9Dg.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+  </body>
+</html>

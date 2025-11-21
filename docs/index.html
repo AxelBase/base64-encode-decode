@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./AxelLab-Logo.ico" />
+    <title>AxelBase – Base64 Encoder • Decoder</title>
+    <meta name="description" content="Fast, private, offline Base64 encoder and decoder. No tracking. No ads. Works offline." />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    
+		<link href="./_app/immutable/assets/0.DSwpcg7p.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.i-yzS3Wc.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DuLTIwJF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DX9AT85P.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BdysBj66.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BFvU-IR9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/2bG7uF7H.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.a2Ymj9Dg.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C0cQ0bqq.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/hWZPI7nN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CfUavsiV.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.Dw1ynY_o.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DpboDwhz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DU7oslTY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B_ZIPEiT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CH2FN7lB.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.oF-jiA_r.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DpzxLHAf.js"><!--1uha8ag--><meta name="description" content="Fast, private, offline Base64 encoder &amp; decoder"/><!----><title>AxelBase – Base64 Encoder • Decoder</title>
+  </head>
+  <body>
+    <div style="min-height: 100%;"><!--[--><!--[--><!----><header class="fixed-nav svelte-12qhfyh"><div class="container nav-container svelte-12qhfyh"><div class="nav-left svelte-12qhfyh"><a href="./" aria-label="Home" class="brand-link svelte-12qhfyh"><img src="./AxelLab-Logo.ico" alt="Logo" class="navbar-logo svelte-12qhfyh"/> <span class="brand-text svelte-12qhfyh">AxelBase</span></a> <div class="bmac-wrapper svelte-12qhfyh"><button class="bmac-btn svelte-12qhfyh"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="me-2"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"></path></svg> Buy me a coffee</button> <!--[!--><!--]--></div></div> <nav class="nav-links svelte-12qhfyh"><a class="nav-item svelte-12qhfyh" href="./">Home</a> <a class="nav-item svelte-12qhfyh" href="./#about">About</a> <a class="nav-item svelte-12qhfyh" href="./#how-to">How to use</a> <a class="nav-item svelte-12qhfyh" href="./#faq">FAQ</a> <a class="nav-item svelte-12qhfyh" href="./blog">Blog</a></nav></div></header> <!--[--><!----><main class="container py-4"><div class="text-center mb-5 pt-3"><h1 class="display-4 fw-bold" style="color: var(--fern-green); text-shadow: 2px 2px 0px black;">AxelBase</h1> <p class="lead fw-bold">Fast • Private • Offline Base64 Encoder &amp; Decoder</p></div> <div class="fern-card mb-5"><ul class="nav nav-pills nav-fill mb-4" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" type="button">Encode</button></li> <li class="nav-item" role="presentation"><button class="nav-link " type="button">Decode</button></li></ul> <!--[--><div class="row g-4"><div class="col-lg-6"><label for="inputEncode" class="form-label fw-bold">Input Text / File</label> <div class="upload-zone mb-3 svelte-1uha8ag" role="region" aria-label="Drop zone"><p class="text-muted mb-3">Drop file here or click to upload</p> <input type="file" id="fileInput" class="d-none"/> <button class="btn btn-fern-outline">Choose File</button></div> <!--[!--><!--]--> <textarea id="inputEncode" class="form-control" placeholder="Enter text to encode..." spellcheck="false"></textarea></div> <div class="col-lg-6"><label for="outputEncode" class="form-label fw-bold">Encoded Result</label> <div class="d-flex gap-2 mb-2"><button class="btn btn-fern btn-copy">Copy</button> <button class="btn btn-fern-outline ms-auto">Clear</button></div> <textarea id="outputEncode" readonly class="form-control valid-border" placeholder="Result appears here..."></textarea></div></div><!--]--></div> <hr class="my-5" style="border-top: 3px dashed var(--fern-green); opacity: 0.5;"/> <section id="about" class="py-5"><h2 class="display-6 fw-bold mb-4 text-fern">About AxelBase</h2> <div class="lead mb-4"><p><strong>AxelBase</strong> is a modern, privacy-first, offline-capable Base64 encoder and decoder built entirely in the browser using SvelteKit. Launched in 2025, it was created out of frustration with existing online tools that upload your data, track your activity, or crash on large files.</p></div> <p>Unlike traditional web converters, AxelBase sends <strong>zero bytes</strong> to any server. Every operation — from reading files to performing the actual Base64 transformation — happens locally using optimized JavaScript running on your device. This means you can safely encode or decode sensitive data: private keys, certificates, internal documents, binary payloads, or anything else — without ever risking exposure.</p> <p>Performance was a core design goal. We abandoned the deprecated <code>btoa()</code>/<code>atob()</code> APIs (which fail above ~16 KB) and implemented a custom <code>Uint8Array</code>-based encoder/decoder that processes files of any size — even multi-gigabyte binaries — using chunked streaming and <code>requestAnimationFrame</code> yielding to keep the UI perfectly responsive.</p> <p>AxelBase supports both standard Base64 and Base64url variants, correctly handles padding (=), validates input in real time, and restores original filenames and MIME types when decoding files. The entire application is open-source under the MIT license, hosted statically, and works flawlessly on GitHub Pages, Vercel, Netlify, or even as a local <code>file://</code> URL.</p> <p>We believe tools should respect users. That’s why AxelBase has:</p> <ul class="list-styled"><li>No analytics, cookies, or tracking pixels</li> <li>No backend, database, or logging</li> <li>No permissions required</li> <li>No data ever leaves your browser</li> <li>Full PWA support — installable and offline-ready</li></ul> <p class="mt-4">Whether you're a developer embedding images in CSS, debugging JWT tokens, reverse-engineering binary protocols, or just need to quickly convert a file, AxelBase is built to be the fastest, safest, and most reliable Base64 tool on the web. No accounts. No limits. No compromise.</p></section> <section id="how-to" class="py-5"><h2 class="display-6 fw-bold mb-4 text-fern">How to Use AxelBase</h2> <div class="row g-4"><div class="col-lg-6"><h3 class="h4 text-fern">Encoding Text or Files</h3> <ol class="numbered-list"><li>Go to the <strong>Encode</strong> tab</li> <li>Paste any text directly into the left textarea</li> <li>Or drag &amp; drop a file (any type, any size) onto the upload zone</li> <li>Or click “Choose File” to select from your device</li> <li>The Base64 result appears instantly on the right</li> <li>Click <strong>Copy</strong> to copy the string, or switch to Decode and download if needed</li></ol> <p><em>Tip:</em> Large files are processed in chunks without freezing your browser.</p></div> <div class="col-lg-6"><h3 class="h4 text-fern">Decoding Base64 Back to Original</h3> <ol class="numbered-list"><li>Switch to the <strong>Decode</strong> tab</li> <li>Paste your Base64 string into the left textarea</li> <li>AxelBase instantly validates format and padding</li> <li>If valid, the decoded result appears on the right</li> <li>If you previously uploaded a file while encoding, the original filename and MIME type are preserved</li> <li>Click <strong>Download File</strong> to save the exact original binary</li> <li>Or click <strong>Copy</strong> to copy the decoded text/string</li></ol> <p><em>Note:</em> Invalid Base64 (missing padding, wrong alphabet, line breaks) is highlighted with clear error messages.</p></div></div> <div class="alert alert-fern mt-4"><strong>Pro Tips:</strong><br/> • Use <kbd>Ctrl+V</kbd> to paste files directly from clipboard (Chrome/Edge)<br/> • Works perfectly offline after first visit<br/> • Install as a PWA for one-click access from your desktop or phone<br/> • Bookmark with a star — it’s your permanent, private Base64 tool</div></section> <section id="faq" class="py-5 mb-5"><h2 class="display-6 fw-bold mb-4 text-fern">Frequently Asked Questions</h2> <div class="accordion" id="faqAccordion"><div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Is my data really safe and private?</button></h2> <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><strong>100% yes.</strong> Nothing ever leaves your browser. We have no servers, no logs, no analytics. Even if someone intercepted your traffic, they’d see only the static HTML/JS files — never your content.</div></div></div> <div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Can it handle very large files (100 MB+)?</button></h2> <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes — using chunked streaming with <code>FileReader</code> and <code>requestAnimationFrame</code>. Files up to multiple gigabytes work smoothly without crashing or freezing the tab.</div></div></div> <div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q3">Does it work offline?</button></h2> <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Completely. After the first visit, all assets are cached. You can save the page, disconnect from the internet, and AxelBase works forever — even from <code>file://</code>.</div></div></div> <div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q4">Why not just use btoa()/atob()?</button></h2> <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Those legacy APIs fail on strings longer than ~16 KB and don’t handle binary files properly. AxelBase uses a custom, high-performance <code>Uint8Array</code> implementation that’s faster and memory-safe.</div></div></div> <div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q5">Can I use this commercially or embed it in my app?</button></h2> <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes! MIT licensed. Fork it, embed it, rebrand it — no restrictions.</div></div></div> <div class="accordion-item border-dark"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q6">Will you ever add image preview, QR codes, etc.?</button></h2> <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Core philosophy: stay fast, private, and focused. Extra features often compromise one of those. But the source is open — you’re welcome to add anything you need!</div></div></div></div></section></main><!----><!--]--> <footer class="fixed-footer svelte-12qhfyh"><div class="container footer-content svelte-12qhfyh"><span>© AxelBase Base64 Encoder – Decoder – 2025</span> <div class="footer-links svelte-12qhfyh"><a href="./privacy" class="svelte-12qhfyh">Privacy</a> <span class="separator svelte-12qhfyh">•</span> <a href="./terms" class="svelte-12qhfyh">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1xrh0ag = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/base64-encode-decode"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DuLTIwJF.js"),
+						import("./_app/immutable/entry/app.a2Ymj9Dg.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+  </body>
+</html>

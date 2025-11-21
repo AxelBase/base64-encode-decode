@@ -1,0 +1,133 @@
+/* app.css */
+:root {
+  --fern-green: #3D642D;
+  --fern-light: #4e7e3a;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-bg: #f4f4f4;
+  --border-width: 2px;
+  --shadow-offset: 4px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+  /* Padding for fixed header and footer */
+  padding-top: 80px; 
+  padding-bottom: 60px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- Typography & Global --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--fern-green);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Custom Component Styles --- */
+
+/* Fancy Card Style */
+.fern-card {
+  background: var(--white);
+  border: var(--border-width) solid var(--black);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--black);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+/* Textareas */
+textarea {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: none;
+  min-height: 180px;
+  max-height: 70vh;
+  border: var(--border-width) solid var(--black) !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px var(--fern-green);
+  border-color: var(--fern-green) !important;
+}
+
+/* Status Borders */
+.error-border {
+  border-color: #dc3545 !important;
+  box-shadow: 4px 4px 0px #dc3545 !important;
+}
+
+.valid-border {
+  border-color: var(--fern-green) !important;
+}
+
+/* --- Buttons --- */
+.btn-fern {
+  background-color: var(--fern-green);
+  color: var(--white);
+  border: var(--border-width) solid var(--black);
+  font-weight: bold;
+  box-shadow: 3px 3px 0px var(--black);
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-fern:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--black);
+  background-color: var(--fern-light);
+  color: var(--white);
+}
+
+.btn-fern:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--black);
+}
+
+.btn-fern-outline {
+  background-color: transparent;
+  color: var(--fern-green);
+  border: var(--border-width) solid var(--fern-green);
+  font-weight: bold;
+  box-shadow: 3px 3px 0px var(--black);
+  border-radius: 4px;
+}
+
+.btn-fern-outline:hover {
+  background-color: var(--fern-green);
+  color: var(--white);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--black);
+}
+
+/* --- Tab Navigation --- */
+.nav-pills .nav-link {
+  color: var(--black);
+  border: var(--border-width) solid transparent;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: -2px;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--fern-green) !important;
+  border: var(--border-width) solid var(--black);
+  border-bottom-color: var(--white); /* Blend with card */
+  color: var(--white) !important;
+  box-shadow: 4px -2px 0px rgba(0,0,0,0.1);
+}
