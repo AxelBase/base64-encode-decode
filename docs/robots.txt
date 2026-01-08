@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://https://axelbase.github.io/arn-parser/sitemap.xml
+Sitemap: https://base64-encode-decode.vercel.app/sitemap.xml
